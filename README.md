@@ -13,6 +13,8 @@ The bot can be broken down into four steps: scraping the website, creating a fil
 4. The MQL5 file (ForexFactoryBot.ex5) then creates a 'straddle' which is making both a buy and a sell order for the good. (Please see: https://www.babypips.com/learn/forex/letting-the-market-decide-which-direction-to-take if you at all confused about a straddle)
 
 # How to use: 
+(The Metatrader 5 application must be downloaded for this bot to work)
+
 1. Download the python file (ForexFactoryScraper.py)
 2. Replace the location of the file. "There are two directories (with subdirectories) in which working files can be located: terminal_data_folder\MQL5\FILES\ (in the terminal menu select to view "File" - "Open the data directory");"
 3. Dependencies: `pip install beautifulsoup4`
