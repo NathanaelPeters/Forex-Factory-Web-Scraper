@@ -15,7 +15,8 @@ The bot can be broken down into four steps: scraping the website, creating a fil
 # How to use: 
 1. Download the python file (ForexFactoryScraper.py)
 2. Replace the location of the file. "There are two directories (with subdirectories) in which working files can be located: terminal_data_folder\MQL5\FILES\ (in the terminal menu select to view "File" - "Open the data directory");"
-3. Run the python file. As a decoding method, it will show the dates and currencies in the terminal as well as tell you whether the file was created or removed and then created.
-4. Download the mql file (ForexFactoryBot.mq5) and compile it.
-5. Open MetaTrader5 and click AutoTrading to allow autotrading.
-6. Apply the bot to a chart by opening the navigator an clicking Expert Advisers and double clicking "ForexFactoryBot"
+3. Dependencies: `pip install beautifulsoup4`
+4. Run the python file. As a decoding method, it will show the dates and currencies in the terminal as well as tell you whether the file was created or removed and then created.
+5. Download the mql file (ForexFactoryBot.mq5) and compile it.
+6. Open MetaTrader5 and click AutoTrading to allow autotrading.
+7. Apply the bot to a chart by opening the navigator an clicking Expert Advisers and double clicking "ForexFactoryBot"
