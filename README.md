@@ -2,7 +2,7 @@
 a Forex Bot that makes orders based on when reports are released according to Forex Factory
 
 # Intro
-Forex (FX) is the marketplace where various national currencies are traded. Much like stocks and other financial securities, news plays an important roles in how something is priced. This bot was made with the intention of web scraping www.forexfactory.com in order to place an order right before a big news announcement is made. 
+Forex (FX) is the marketplace where various national currencies are traded. Much like stocks and other financial securities, news plays an important role in how something is priced. This bot was made with the intention of web scraping www.forexfactory.com in order to place an order right before a big news announcement is made. 
 
 # Overview
 The bot can be broken down into four steps: scraping the website, creating a files with the information that was scraped, reading the file for the times/currencies and finally, making the orders. 
