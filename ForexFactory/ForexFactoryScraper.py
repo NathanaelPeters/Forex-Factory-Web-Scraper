@@ -7,24 +7,9 @@ from datetime import datetime, timedelta
 from threading import Timer
 
 today = date.today().strftime('%y.%m.%d')
-
-
 session = requests.Session()
-session.headers['User-Agent'] = 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36'
-session.max_redirects = 50
-
-
 url = 'https://www.forexfactory.com/'
 response = session.get(url)
-if response.history:
-    print ("Request was redirected")
-    for resp in response.history:
-        print (resp.status_code, resp.url)
-    print( "Final destination:")
-    print (response.status_code, response.url)
-else:
-    print ("Request was not redirected")
-
 frontPage = BeautifulSoup(response.content, "html.parser") 
 
 class my_time:
@@ -165,13 +150,13 @@ print (ffes)
 
 
 def NewsScraped (): 
-    if os.path.exists("C:\\Users\\natep\\AppData\\Roaming\\MetaQuotes\\Terminal\\D0E8209F77C8CF37AD8BF550E51FF075\\MQL5\\Files\\MyDataFile"):
-        os.remove("C:\\Users\\natep\\AppData\\Roaming\\MetaQuotes\\Terminal\\D0E8209F77C8CF37AD8BF550E51FF075\\MQL5\\Files\\MyDataFile")
+    if os.path.exists('C:\\*insert your own path*\\MQL5\\Files\\ForexFactoryData'):
+        os.remove('C:\\*insert your own path*\\MQL5\\Files\\ForexFactoryData')
         print("it was removed")
     else:
         print("The file does not exist")
     time.sleep(5)
-    fh = open('C:\\Users\\natep\\AppData\\Roaming\\MetaQuotes\\Terminal\\D0E8209F77C8CF37AD8BF550E51FF075\\MQL5\\Files\\MyDataFile', 'w')
+    fh = open('C:\\*insert your own path*\\MQL5\\Files\\ForexFactoryData', 'w')
     report = ""
     count = 0
     for ffe in ffes:
